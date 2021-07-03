@@ -10,3 +10,4 @@ solutions a correct. I only did them to try the Ruby language.
 ## List of Projects
 1. FizzBuzz
 2. Calculator class
+3. Armed robot
