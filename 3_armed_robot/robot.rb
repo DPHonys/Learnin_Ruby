@@ -29,6 +29,7 @@ class Robot
   def introduce
     puts "Hi, my name is #{@name} and my arms are :"
     arms = @arms.map(&:type) # Array#map - crates new array from values that are returned by block
+    # { |a| a.type } = (&:type) - syntax sugar - & creates a proc object that's get called on each arm
     arms.tally.each { |a| puts "#{a[0]} > #{a[1]}" } # tally extracts value and how many times it appears (new hash)
   end
 
