@@ -11,3 +11,4 @@ solutions a correct. I only did them to try the Ruby language.
 1. FizzBuzz
 2. Calculator class
 3. Armed robot
+4. Custom OpenStruct implementation (with quotation marks :^] )
