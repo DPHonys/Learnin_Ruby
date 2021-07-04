@@ -85,7 +85,7 @@ class MyStruct
       self.class.send(:define_method, symbol) { @table[symbol] }
     elsif symbol.to_s.end_with?('=')
       k = symbol.to_s.delete('=').to_sym
-      self.class.send(:define_method, symbol) { |x| puts @table[k] = x } if @table.key?(k)
+      self.class.send(:define_method, symbol) { |x| @table[k] = x } if @table.key?(k)
     else
       return super symbol, *args
     end

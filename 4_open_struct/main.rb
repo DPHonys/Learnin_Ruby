@@ -27,7 +27,8 @@ puts my.a
 p my.methods
 my.delete_field('a')
 p my.methods
-# puts zxc.a # exception undefined method
+# puts my['a'] # exception key error
+# puts my.a # exception undefined method
 
 other = MyStruct.new
 
