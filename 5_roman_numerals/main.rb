@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
 require_relative 'roman'
+require_relative 'integer_patch'
+require_relative 'string_patch'
 
 puts first = Roman.new(5)
-puts second = Roman.new('')
+puts second = Roman.new('XXX')
 
 puts first + second
 puts first * second
@@ -31,9 +33,14 @@ puts (1..100).first(second)
 
 puts first.to_s # => "V"
 
-# TODO
-# 6.roman # => "VI"
-# 'IV'.number # => 4
+puts first.to_i
+puts second.to_int
 
-# 6.to_rom # => Roman
-# "V".to_rom # => Roman
+using IntegerPatch
+using StringPatch
+
+puts 6.roman # => "VI"
+puts 'IV'.number # => 4
+
+puts 6.to_rom.class # => Roman
+puts 'V'.to_rom.class # => Roman

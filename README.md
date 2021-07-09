@@ -12,4 +12,4 @@ solutions a correct. I only did them to try the Ruby language.
 2. Calculator
 3. Armed robot
 4. Custom OpenStruct implementation ( with quotation marks :^) )
-5. Roman numerals ( - WIP - )
+5. Roman numerals
